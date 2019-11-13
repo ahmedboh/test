@@ -1,0 +1,7 @@
+<p [ngClass]="'c':true" >
+    <img [src]="img" width="100px" height="100px"/>
+    {{nom|uppercase}} Prix (Kg):{{prix}}
+    <input type="checkbox" [checked]="frais"/>Frais Quantité:
+    <input type="number" [ngModel]="val" /><button (click)="onCal()" [disabled]="val!=0">Calculer Prix </button>
+<p>
+<p *ngIf="pr!=0"> {{pr}}</p>

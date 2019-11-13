@@ -1,0 +1,7 @@
+<h1>légumes du {{da|date:'dd/MMMM/yyyy'}} </h1>
+<ul>
+    <li *ngFor="let l of tablegumes" >
+        <app-lugume [img]="l.image " [nom]="l.nom" [prix]="l.prix" [frais]="l.frais" ></app-lugume>
+    </li>
+</ul>
+
